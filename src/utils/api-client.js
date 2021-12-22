@@ -4,9 +4,9 @@ import { message, notification } from 'ant-design-vue'
 import { isObject } from './util'
 
 const storedApiUrl = localStorage.getItem('apiUrl')
-
 const apiUrl = storedApiUrl ? storedApiUrl : process.env.VUE_APP_API_URL
-
+//使用指令pnpm serve单独开端口调试时使用下面的语句，并注释掉上面那一条
+//const apiUrl = 'http://localhost:8090'
 const haloRestApiClient = new HaloRestAPIClient({
   baseUrl: apiUrl
 })

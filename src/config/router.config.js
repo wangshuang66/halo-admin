@@ -106,6 +106,13 @@ export const asyncRouterMap = [
             hidden: true,
             component: () => import('@/views/sheet/independent/JournalList'),
             meta: { title: '日志', hiddenHeaderContent: false }
+          },
+          {
+            path: '/sheets/animations',
+            name: 'AnimationList',
+            hidden: true,
+            component: () => import('@/views/sheet/independent/AnimationList'),
+            meta: { title: '我的追番', hiddenHeaderContent: false }
           }
         ]
       },
